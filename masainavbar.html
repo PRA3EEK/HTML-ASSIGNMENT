@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            height: 60px;
+            font-size: 20px;
+        }
+        #container>div+div{
+          
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 65%;
+        height: 60px;
+        }
+        a{
+           margin-top: auto;
+           margin-bottom: auto;
+           text-decoration: none;
+           color: black;
+        }
+        
+        a:hover{
+            background-color:#fffafb ;
+            color:#ef2f31 ;
+        }
+        select:hover{
+            background-color:#fffafb ;
+            color:#ef2f31 ;
+            border: none;
+        }
+        #container>div{
+            font-family: sans-serif;
+        }
+        #container>div:first-child>img{
+         height: 70px;   
+        }
+        select{
+            border: none;
+        }
+       #container>div:last-child>div>a{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       #container>div:last-child>div>a>img{
+           width: 24px;
+           height: 24px;
+       }
+       #container>div:last-child>div>a{
+           background-color: #f2fdff;
+           color: #6e72cc;
+           height: 50px;
+           width: 250px;
+           border-radius: 10px;
+
+       }
+       #container>div:last-child>div>a:hover{
+           background-color:   #c2e6ec;
+       }
+       button{
+          padding: 20px 30px;
+          font-size: 20px;
+          border-radius: 10px;
+          color: #ef2f31 ;
+          background-color:#fffafb  ;
+          border:2px solid #ef2f31   ;
+       }
+       select{
+           font-size: 20px;;
+       }
+       button:hover{
+           background-color:#f5c7c8;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="ERROR">
+        </div>
+        <div>
+            <select name="courses" id="select-courses">
+                <option value="">COURSES</option>
+                <option value="">Web development</option>
+                <option value="">Android development</option>
+                <option value="">Data anylitics</option>
+            </select>
+            <a href="">FEES & ISA</a>
+            <a href="">ABOUT US</a>
+            <a href="">HIRE FROM US</a>
+            <a href="">FAQ</a>
+            <a href="">EVENTS</a>
+            <div>
+                <a href=""><p>REFER & EARN</p>
+                    <img src="https://www.masaischool.com/img/referral/hand.png" alt="ERROR"></a>
+                
+            </div>
+            <button>LOGIN</button>
+        </div>
+    </div>
+</body>
+</html>
