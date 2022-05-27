@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar{
+            font-size: 40px;
+            background-color: yellow;
+            height: 100px;
+        }
+        #body{
+            display: grid;
+        grid-template-columns: repeat(4,22%);
+        grid-template-rows: 500px;
+        font-size: 50px;
+        justify-content: space-around;
+        margin-top: 50px;
+        }
+        #body>:nth-child(1){
+           background-color: red;
+        }
+        #body>:nth-child(2){
+           background-color: rgb(114, 187, 3);
+        }
+        #body>:nth-child(3){
+           background-color:violet;
+        }
+         #body>:nth-child(4){
+           background-color: grey;
+        }
+        @media all and (min-width: 640px) and (max-width: 1010px){
+            #navbar{
+            font-size: 30px;
+            background-color: yellow;
+            height: 100px;
+        }
+            #body{
+            display: grid;
+        grid-template-columns: repeat(2,40%);
+        grid-template-rows: 500px;
+        grid-row-gap: 50px;
+        font-size: 50px;
+        justify-content: space-around;
+        margin-top: 50px;
+        }
+
+        }
+        @media all and (min-width: 300px) and (max-width: 640px){
+            #navbar{
+            font-size: 20px;
+            background-color: yellow;
+            height: 100px;
+        }
+            #body{
+            display: grid;
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows:repeat(4,150px) ;
+        grid-row-gap: 50px;
+        font-size: 50px;
+        justify-content: space-around;
+        margin-top: 50px;
+        }
+        }
+            </style>
+</head>
+<body>
+    <div id="navbar">
+        <h1>Navigation</h1>
+    </div>
+    <div id="body">
+        <div>Box 1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+        <div>box4</div>
+    </div>
+</body>
+</html>
