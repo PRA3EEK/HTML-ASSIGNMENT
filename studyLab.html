@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+        #NavBar{
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        #NavBar>div{
+           display: flex;
+           align-items: center;
+        }
+        #NavBar>div:nth-child(1){
+            background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+            
+            color: white;
+            padding: 0px 20px;
+        }
+        #NavBar>div:nth-child(2){
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #body{
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        #left{
+            padding: 50px 30px;
+           
+            width: 50%
+
+        }
+        #left>h1{
+            font-size: 50px;
+        }
+        #right{
+            
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2,45%);
+            grid-template-rows: repeat(2,47.5%);
+            grid-column-gap: 10%;
+            grid-row-gap: 5%;
+            
+        }
+        #right>div{
+           
+            padding: 30px 20px;
+
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 5px;
+            
+        }
+        #right>div>img{
+            width: 40%;
+            border-radius: 50%;
+        }
+        #right>div>:nth-child(2){
+            font-size: 30px;
+            font-weight: 500;
+        }
+        #right>div>:nth-child(3){
+            font-size: 25px;
+            color:  rgb(90, 87, 87);
+            font-weight: 500;
+            line-height: 40px;
+        }
+        #left>p:nth-child(1){
+        color: #6f9ffd;
+        }
+        #left>h1~p{
+            color: rgb(90, 87, 87);
+        }
+        #left>p{
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 40px;
+        }
+        #left>div{
+            display: flex;
+        }
+        #left>div>img{
+            width: 40%;
+        }
+        #left>div>p{
+            width: 50%;
+            font-size: 35px;
+            margin:auto;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div id="NavBar">
+       <div><h1>StudyLab</h1></div>
+       <div>
+           <p>Home</p>
+           <p>About</p>
+           <p>Course</p>
+           <p>Instructor</p>
+           <p>Blog</p>
+           <p>Contact</p>
+       </div>
+    </div>
+    <div id="body">
+        <div id="left">
+           <p>WELCOME TO STUDY LAB</p>
+           <h1>We Are StudyLab An Online Learning Center</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quibusdam itaque aliquid harum omnis, natus mollitia tempore optio consectetur nisi, obcaecati repellendus? Quas, iure! Illo?</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, esse fugit? Omnis adipisci tempora ipsa iste. Cum fugiat cupiditate modi repudiandae consectetur accusantium, veniam voluptate.</p>
+           <div>
+               <img src="https://ikzttp.mypinata.cloud/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/4275.png" alt="">
+               <p>Learn anything From StudyLab, Watch video</p>
+           </div>
+        </div>
+        <div id="right">
+           <div>
+               <img src="https://ikzttp.mypinata.cloud/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/8114.png" alt="">
+           <p>Top Quality Content</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam.</p>
+           </div>
+           <div>
+            <img src="https://ikzttp.mypinata.cloud/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/2644.png" alt="">
+            <p>Highly Skilled Instructor</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam.</p>
+           </div>
+           <div>
+            <img src="https://ikzttp.mypinata.cloud/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/6782.png" alt="">
+            <p>World Class & Quiz</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam.</p>
+           </div>
+           <div>
+            <img src="https://ikzttp.mypinata.cloud/ipfs/QmYDvPAXtiJg7s8JdRBSLWdgSphQdac8j1YuQNNxcGE1hg/5629.png" alt="">
+            <p>Get Certified</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nam.</p>
+           </div>
+        </div>
+    </div>
+  
+</body>
+</html>
