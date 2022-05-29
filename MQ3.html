@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+         #nav{
+             background-color: yellow;
+             margin: 10px;
+             display: grid;
+             padding: 0px 20px;
+                               
+         }
+         #nav>h1{
+             font-size: 50px;
+         }
+         #body{
+             margin: 10px;
+             display: grid;
+             grid-template-columns: 68% 28%;
+             grid-column-gap: 4%;
+             height: 500px;
+         }
+         #left{
+             background-color: red;
+             padding:0px 20px;
+             font-size: 20px;
+               
+         }
+         #right{
+             display: grid;
+             grid-template-rows: repeat(3,30%);
+             grid-row-gap: 5%;
+             font-size: 20px;
+         }
+         #right>div{
+             background-color: green;
+             padding: 10px 20px;
+         }
+         @media all and (min-width:640px) and (max-width:1010px){
+            #body{
+             margin: 10px;
+             display: grid;
+             grid-template-rows: 68% 28%;
+             grid-template-columns: repeat(1,100%);
+             grid-row-gap: 4%;
+             height: 500px;
+         }
+         #right{
+             display: grid;
+             grid-template-columns: repeat(3,30%);
+            grid-template-rows: repeat(1,100%);
+             grid-column-gap: 5%;
+             font-size: 20px;
+         }
+         }
+         @media all and (min-width:300px) and (max-width:640px){
+            #body{
+             margin: 10px;
+             display: grid;
+             grid-template-rows: 68% repeat(3,28%);
+             grid-template-columns: repeat(1,100%);
+             grid-row-gap: 4%;
+             height: 500px;
+         }
+            #right{
+             display: grid;
+             grid-template-columns: repeat(1,100%);
+            grid-template-rows: repeat(3,100%);
+             grid-row-gap: 5%;
+             font-size: 20px;
+         }
+         }
+
+    </style>
+</head>
+<body>
+ <div id="nav">
+  <h1>Navigation</h1>
+ </div>
+ <div id="body">
+    <div id="left">
+        <h2>Left Box</h2>
+      </div>
+      <div id="right">
+       <div>Right Box1</div>
+       <div>Right Box2</div>
+       <div>Right Box3</div>
+      </div>   
+ </div>
+ 
+</body>
+</html>
