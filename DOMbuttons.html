@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+</body>
+</html>
+<script>
+    btns=[
+        {name: "Primary", bkC: "blue", C: "white"},
+        {name: "Secondary", bkC: "grey", C: "white"},
+        {name: "Success", bkC: "green", C: "white"},
+        {name: "Danger", bkC: "Red", C: "white"},
+        {name: "Warning", bkC: "yellow", C: "Black"},
+        {name: "Info", bkC: "teal", C: "white"},
+        {name: "Light", bkC: "white", C: "black"},
+        {name: "Dark", bkC: "black", C: "white"},
+        {name: "Link", bkC: "white", C: "blue"},   
+    ];
+    let y=document.querySelector("div");
+    y.style.width="80%";
+    y.style.margin="auto"
+   btns.forEach(function(el,ind){
+   let x= document.createElement("button");
+   x.style.backgroundColor=el.bkC;
+   x.style.color=el.C;
+   x.style.border="none";
+   x.style.borderRadius="3px";
+   x.style.margin="5px"
+
+   x.innerText=el.name;
+   document.querySelector("div").append(x);
+   })
+
+</script>
