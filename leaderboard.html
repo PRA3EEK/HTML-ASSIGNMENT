@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            width: 50%;
+            
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }#head>div>:nth-child(1){
+           width: 100%;
+           border: 3px solid;
+           height: 100px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           
+        }
+       #head>div{
+          text-align: center;
+          width: 30%;
+       }
+       #head>:nth-child(1)>:nth-child(1){
+           background-color: red;
+       }
+       #head>:nth-child(2)>:nth-child(1){
+           background-color: green;
+       }
+       #middle{
+           margin: auto;
+           width: 30%;
+
+       }
+       #middle>:nth-child(1){
+           text-align: center;
+       }
+       #middle>:nth-child(2){
+          width: 100%;
+          border: 2px solid;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 60px;
+          background-color: grey;
+       }
+       #bottom{
+           width: 30%;
+           
+           margin: auto;
+           display: grid;
+           grid-template-columns: repeat(3,30%);
+           justify-content: space-around;
+           grid-row-gap: 20px;
+       }
+       #bottom>div{
+           border: 1px solid;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .grn{
+           background-color: green;
+           
+       }
+       .ora{
+           background-color: orange;
+       }
+       #bottom>div.wht{
+           border:none;
+           ;
+       }
+       #bottom>div.pur{
+           background-color: purple;
+           color: white;
+       }
+       button{
+           width: 100%;
+           background-color: white;
+           margin-top: 20px;
+           background-color: black;
+           color: white;
+        
+       }
+       #button{
+           margin: auto;
+           width: 30%;
+           
+       }
+    </style>
+</head>
+<body>
+    <div id="head">
+      <div>
+          <h1 id="minscr">43</h1>
+          <h1>MIN</h1>
+      </div>
+      <div>
+          <h1 id="maxscr">2019</h1>
+          <h1>MAX</h1>
+    </div>
+    </div>
+    <div id="middle">
+          <h1>SCORE</h1>
+          <h1>#</h1>
+    </div>
+    <div id="bottom">
+        <div class="grn"><h1>1</h1></div>
+        <div class="ora"><h1>2</h1></div>
+        <div class="grn"><h1>3</h1></div>
+        <div class="ora"><h1>4</h1></div>
+        <div class="ora"><h1>5</h1></div>
+        <div class="ora"><h1>6</h1></div>
+        <div class="grn"><h1>7</h1></div>
+        <div class="ora"><h1>8</h1></div>
+        <div class="grn"><h1>9</h1></div>
+        <div class="wht"></div>
+        <div class="pur"><h1>0</h1></div>
+        <div class="wht"></div>
+        
+    </div>
+    <div id="button"><button><h1>ENTER</h1></button></div>
+    
+</body>
+</html>
+<script>
+    let x=document.querySelectorAll("#bottom>div");
+   let y=document.querySelectorAll("#middle>h1");
+   let z=document.querySelector("#button");
+   z.addEventListener("click",minmax);
+   let scr1=document.querySelector("#minscr").innerText;
+   let scr2=document.querySelector("#maxscr").innerText;
+   let bag="";
+    for(let i=0;i<x.length;i++){
+        x[i].addEventListener("click",display);
+       
+    };
+    function display(){
+        let num=event.target.innerText;
+        bag=bag+num;
+        console.log(bag);
+        y[1].innerText=bag;
+    }
+    function minmax(){
+        if(Number(y[1].innerText)<Number(scr1)){
+            document.querySelector("#minscr").innerText=y[1].innerText;
+            y[1].innerText="#";
+            bag="";
+
+        }else if(Number(y[1].innerText)>Number(scr2)){
+            document.querySelector("#maxscr").innerText=y[1].innerText;
+            y[1].innerText="#";
+            bag="";
+        }else{
+            y[1].innerText="#";
+            bag=""; 
+        }
+    }
+   
+</script>

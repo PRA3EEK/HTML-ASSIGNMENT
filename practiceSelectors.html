@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>First H1</h1>
+    <h1>Second H1</h1>
+    <h3>First H3</h3>
+    <h3>Second H3</h3>
+    <h5>First H5</h5>
+    <h5>Second H5</h5>
+    <h5>Third H5</h5>
+    <div class="green">First DIV</div>
+    <div class="red">Second DIV</div>
+    <div class="blue">Third DIV</div>
+    <p class="green">First P</p>
+    <p class="red">Second P</p>
+    <p class="blue">Third P</p>
+    <hr/>
+    <button>Change H1</button>
+    <button>Change H3</button>
+    <button>Change H5</button>
+    <button>Change Green</button>
+    <button>Change Red</button>
+    <button>Change Blue</button>
+   
+</body>
+</html>
+<script>
+    let x=document.querySelector('h1');
+    let y=document.querySelectorAll("button");
+    let z=document.querySelectorAll("h3");
+    let a=document.querySelectorAll("h5");
+    let b=document.querySelectorAll(".green");
+    let c=document.querySelectorAll(".blue");
+    let d=document.querySelectorAll(".red");
+    y[0].addEventListener("click",func1);
+    y[1].addEventListener("click",func2);
+    y[2].addEventListener("click",func3);
+    y[3].addEventListener("click",func4);
+    y[4].addEventListener("click",func5);
+    y[5].addEventListener("click",func6);
+
+    function func1(){
+         x.style.color="red";
+     
+    }
+    function func2(){
+        for(let i=0;i<z.length;i++){
+            z[i].style.color="green";
+        }
+    }
+    function func3(){
+      for(let i=0;i<a.length;i++){
+          a[i].style.color="blue";
+      }
+    }
+    function func4(){
+        for(let i=0;i<b.length;i++){
+            b[i].style.color="green"
+        }
+    }
+function func5(){
+    for(let i=0;i<d.length;i++){
+        d[i].style.color="red";
+    }
+}
+ function func6(){
+       for(let i=0;i<c.length;i++){
+              c[i].style.color="blue"
+          }
+        }
+    
+</script>
