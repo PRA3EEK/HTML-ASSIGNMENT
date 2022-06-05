@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body{
+            display: grid;
+            width:85%;
+            margin: auto;
+            grid-template-columns: repeat(4,23%);
+            grid-row-gap: 20px;
+            justify-content: space-between;
+            font-family:  Poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+        #body>div{
+           
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+   
+        }
+        #body>div>:nth-child(1){
+          width: 100%;
+          border-radius: 10px 10px 0px 0px;
+        }
+        #body>div>:nth-child(2){
+         font-size: 30px;
+        }
+        #body>div>:nth-child(3){
+            font-size: 25px;
+        }
+        #body>div>:nth-child(4){
+            width: 60%;
+        }
+        @media all and (min-width: 650px) and (max-width: 1025px){
+            #body{
+            display: grid;
+            width:85%;
+            margin: auto;
+            grid-template-columns: repeat(3,30%);
+            grid-row-gap: 20px;
+            justify-content: space-between;
+            font-family:  Poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        } 
+        #body>div>:nth-child(2){
+         font-size: 15px;
+        }
+        #body>div>:nth-child(3){
+            font-size: 12px;
+        }
+        }
+        @media all and (min-width: 300px) and (max-width: 650px){
+            #body{
+            display: grid;
+            width:85%;
+            margin: auto;
+            grid-template-columns: repeat(2,47%);
+            grid-row-gap: 20px;
+            justify-content: space-between;
+            font-family:  Poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        } 
+        #body>div>:nth-child(2){
+         font-size: 12px;
+        }
+        #body>div>:nth-child(3){
+            font-size: 12px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+
+    </div>
+</body>
+</html>
+<script>
+    let details = [
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" , name : "Vijay Shekhar Sharma", role : 'Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" , name : "Kunal Shah", role : 'Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" , name : "Amrish Rau", role : 'CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" , name : "Sampad Swain", role : 'Co-Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg" , name : "Ankush Sachdeva", role : 'Co-Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg" , name : "Bhanu Pratap Singh", role : 'Co-Founder & CTO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"},
+
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png" , name : "Farid Ahsan", role : 'Co-Founder & COO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg"},
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg" , name : "Amit Kumar Agarwal", role : 'Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"},
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg" , name : "Akhil Gupta", role : 'Founder & CTO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg" , name : "Saurabh Garg", role : 'Co-Founder & CBO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/nobroker_rect_28c9778c30.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg" , name : "Vipin Pathak", role : 'Co-Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/care24_1164f7a2cd.png"},
+         
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg" , name : "Ramakant Sharma", role : 'Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/livspace_f9318b2e8d.png"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Mohit_Tandon_Delhivery_b43fee16c4.jpg" , name : "Mohit Tandon", role : 'Co-Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/delhivery_17e85a76ed.png"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Abhishek_Goyal_tracxn_5b2f61d87d.jpg" , name : "Abhishek Goyal", role : 'Co-Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/tracxn_6d0c3de2ee.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Anurag_Jain_Kredx_b6ed6a31c6.jpg" , name : "Anurag Jain", role : 'Founder & Executive Director', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/kredx_rect_204437078a.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Harshvardhan_Lunia_Lendingkart_44d72a6fcd.jpg" , name : "Harshvardhan Lunia", role : 'Co-Founder & CEO', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/lendingkart_rect_d0d30d7b53.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg" , name : "Sunil Rao", role : 'Country Head Strategy and Corporate Business De', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/amazon_rect_9e0cd101b1.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg" , name : "Sharda Balaji", role : 'Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/novojuris_ad9499f5b9.svg"},
+
+
+        {img : "https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg" , name : "Kulin Shah", role : 'Co-Founder', company : "https://masai-website-images.s3.ap-south-1.amazonaws.com/onsurity_5500f1c3b1.png"},
+
+
+    ];
+    details.forEach(function(el){
+        let box = document.createElement("div");
+    let img = document.createElement("img");
+    let nm = document.createElement("h2");
+    let rl = document.createElement("p");
+    let img1 = document.createElement("img");
+    let imgval = el.img;
+    let nmval = el.name;
+    let rlval = el.role;
+    let img1val = el.company;
+    document.querySelector("#body").append(box);
+    box.append(img);
+    img.setAttribute("src",imgval);
+    box.append(nm);
+    nm.append(nmval);
+    box.append(rl);
+    rl.append(rlval);
+    box.append(img1);
+    img1.setAttribute("src",img1val);
+    })
+       
+    
+ 
+
+</script>
